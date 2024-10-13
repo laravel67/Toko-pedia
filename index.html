@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toko Pedia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="overlay" class="overlay"></div>
+    <div class="header">
+        <div class="item-header-1 d-flex justify-content-between align-items-center px-3">
+            <div class="d-flex align-items-center">
+                <img src="img/1.png" alt="" class="mx-2">
+                <span>Download Aplikasi Tokepedia</span>
+            </div>
+            <div class="d-flex">
+                <span class="mr-4">Tentang Tokepedia</span>
+                <span class="mr-4">Mitra Tokepedia</span>
+                <span class="mr-4">Mulai Berjualan</span>
+                <span class="mr-4">Promo</span>
+                <span class="mr-4">Tokopedia Care</span>
+            </div>
+        </div>
+
+        <div class="item-header-2 d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="">
+                    <img src="/img/2.png" alt="" class="img-logo mr-3">
+                </a>
+                <span class="mx-4 text-category">Kategori</span>
+                <div class="wrap-search">
+                    <div class="search-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+
+                    <input type="search" id="searchInput" class="form-control border-0" placeholder="Cari di Tokopedia" data-toggle="modal" data-target="#exampleModal">
+                    <div class="modal fade modal-search" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-search-head">
+                            <div class="modal-content">
+                                <div class="d-flex justify-content-between">
+                                    <span class="font-weight-bold title text-dark">
+                                        Pencarian
+                                    </span>
+                                    <span class="font-weight-bold title text-danger" id="clearAll">
+                                        Hapus semua
+                                    </span>
+                                </div>
+
+                                <span class="ml-2 mt-2" style="font-size: 14px;">Laptop Acer Swift3</span>
+                                <span class="ml-2 mt-2" style="font-size: 14px;">SSD 8 GB VGen</span>
+                                <span class="ml-2 mt-2" style="font-size: 14px;">Buku Pemrograman</span>
+
+                                <span class="font-weight-bold mb-2 text-dark mt-3">
+                                    Populer
+                                </span>
+                                <div class="d-flex flex-wrap">
+                                    <button class="btn btn-sm mr-2">text button</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+   
+                </div>
+
+                <div class="wrap-cart mx-3">
+                    <i class="bi bi-cart3" id="wrap-cart"></i>
+                    <span class="badge bg-danger text-white">3</span>
+                </div>
+                <span class="line mr-3">|</span>
+                <div class="d-flex">
+                    <button class="btn font-weight-bold mr-3">Masuk</button>
+                    <button class="btn font-weight-bold text-white">Daftar</button>
+                </div>
+            </div>
+
+            <div class="flex text-under-search">
+                <span class="mr-3">Kulkas 2 Pintu</span>
+                <span class="mr-3">Filter Air</span>
+                <span class="mr-3">Lampu Gantung</span>
+                <span class="mr-3">Kursi Lipat</span>
+                <span class="mr-3">Beras Porang</span>
+                <span class="mr-3">Lampu Led</span>
+
+            </div>
+
+        </div>
+
+        <div class="menu-bar-container">
+            <div id="menu-cart" class="menu-bar flex-column justify-content-between align-items-center">
+                <img src="/img/empty-state-pp.png" alt="">
+                <h5 class="title-menu-cart mt-2 font-weight-bold">Wah, keranjang belanjamu kosong</h5>
+                <span class="text-center text-muted">Yuk, isi dengan barang-barang impianmu!</span>
+                <button class="btn btn-sm">Mulai Belanja</button>
+            </div>
+        </div>        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    
+  </body>
+</html>

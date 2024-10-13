@@ -1,0 +1,263 @@
+body{
+    height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    cursor: pointer;
+}
+.overStyle {
+    display: block;
+}
+
+
+
+.header{
+    position: relative;
+    z-index: 9999;
+}
+.header span{
+    font-size: 14px;
+}
+.item-header-1{
+    padding: 8px 32px;
+    background-color: #f4f4f4;
+
+}
+
+.header .item-header-1 span{
+    color: #929292;
+}
+
+.header .item-header-1 span:hover{
+    color: #03ac0e;
+    cursor: pointer;
+}
+
+.header .item-header-1 img{
+    width: 16px;
+}
+
+.header .item-header-2{
+    padding: 8px 32px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 6px -1px;
+}
+
+.item-header-2 .img-logo{
+    width: 147px;
+}
+
+.item-header-2 .text-category{
+    padding:  2px 5px;
+    color: #000000;
+}
+
+.item-header-2 .text-category:hover{
+    background-color: #f3f4f5 !important;
+    cursor: pointer;
+    color: #03ac0e;
+    border-radius: 5px;
+}
+
+.item-header-2 span{
+    color: #929292;
+}
+
+
+.item-header-2 .wrap-search {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+}
+
+
+
+.item-header-2 .wrap-search .form-control {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 40px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.item-header-2 .wrap-search .form-control::placeholder {
+    color: #cdcdcd;
+    font-size: 14px;
+}
+
+.item-header-2 .wrap-search .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #03ac0e;
+}
+
+.item-header-2 .wrap-search .search-icon {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 35px; /* Lebar yang lebih sesuai dengan ukuran ikon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-header-2 .wrap-search .search-icon .bi-search {
+    font-size: 16px;
+    color: #9b9b9b;
+}
+
+.item-header-2 .wrap-cart .bi-cart3{
+    position: relative;
+    background-color: transparent;
+    height: max-content;
+    width: max-content;
+    padding: 0px 8px 5px 8px;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.wrap-cart span{
+    font-size: 9px;
+    font-weight: 100;
+    width: 3%px;
+    z-index: 9999;
+    margin-top: 10%px;
+    position: absolute;
+    right: 12.2%;
+    
+}
+
+.item-header-2 .wrap-cart .bi-cart3:hover{
+    color: #03ac0e;
+    cursor: pointer;
+}
+
+.line{
+    font-size: 26px;
+    color: #cdcdcd;
+    margin-bottom: 8px;
+    font-weight: 100;
+}
+
+.header .btn{
+    border-radius: 8px;
+    font-size: 13px;
+    background-color: #03ac0e;
+}
+
+.header .btn:first-child{
+    background-color: #ffffff;
+    border: 1px solid #03ac0e;
+    color: #03ac0e;
+}
+
+.text-under-search{
+    margin-left: 16.3%;
+}
+
+.text-under-search span:hover{
+    color: #03ac0e;
+    cursor: pointer;
+}
+
+
+
+.menu-bar-container {
+    position: absolute;
+    right: 35px;
+    top: 91px;
+    perspective: 1000px; /* Untuk perspektif 3D jika diperlukan */
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 13px 35px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px); /* Mulai dari posisi sedikit di atas layar */
+    opacity: 0; /* Mulai dari keadaan transparan */
+    visibility: hidden; /* Mulai dari keadaan tidak terlihat */
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999999;
+}
+
+.menuBar {
+    transform: translateY(0); /* Geser ke posisi terlihat */
+    opacity: 1; /* Buat terlihat sepenuhnya */
+    visibility: visible; /* Pastikan terlihat */
+}
+
+
+
+.menu-bar .title-menu-cart{
+    font-size: 18px;
+}
+
+.menu-bar img{
+    width: 150px;
+}
+
+.menu-bar span{
+    font-size: 14px;
+    color: #31353bad;
+}
+
+.menu-bar .btn{
+    color: #03ac0e;
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    border-color: #03ac0e;
+}
+
+.modal-search{
+    z-index: 999;
+}
+
+.modal-search .modal-content{
+    top: 56px;
+    right: 170px;
+    padding: 19px;
+    width: 148%;
+    border-radius: 0;
+    border: 0;
+}
+
+.modal-search-head .btn{
+    color: #03ac0e;
+    border: 1px solid #03ac0e;
+    border: 20px;
+    background-color: transparent;
+}
+
+.modal-search-head span{
+    color: #818181;
+}
+
+
+
+
+
